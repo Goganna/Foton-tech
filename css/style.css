@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/gilroy-regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/gilroy-regular.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/gilroy-regular.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/gilroy-regular.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    font-family: "Gilroy", "Helvetica", sans-serif;
+    font-style: normal;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+}
+address {
+    float: left;
+}
+a {
+    text-decoration: none;
+}
+.page-active {
+    color: #FF7129;
+}
+.header-high {
+    width: 1600px; 
+    height: 34px;
+    background-color: #20242D;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+} 
+.header-list a {
+    color: white;
+    text-align: right;
+}
+span.tel{
+    font-weight: 500;
+}
+.header_body {
+    width: 1600px; 
+    height: 57px;
+    background-color: #FFFFFF;
+    border: 1px solid #EFF1F5;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #20242D;
+}
+.header-body a {
+    color: #20242D;
+    text-align: right; 
+}
+.logo {
+    float: left;
+}
+.h1-main {
+    font-weight: bold;
+    font-size: 92px;
+    line-height: 111px;
+    text-align: center;
+    color: black;
+}
+.works {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: black;
+}
+.h2-main {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 97%;
+    text-align: center;
+    color: #20242D;
+}
+.text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242D;
+}
+.body_botton {
+    width: 187px;
+    height: 49px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    background: #FF7129;
+    color: white;
+    border: 1px solid #FF7129;
+}
+.footer {
+    background-color: #20242D;
+    width: 1600px; 
+    height: 207px;
+}
+.footer_body {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.footer-body a {
+    color: #FFFFFF;
+    text-align: right;
+}
+.footer_botton {
+    width: 187px;
+    height: 49px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    background: #20242D;
+    color: white;
+    border: 1px solid #FF7129;
+}
+.footer-low a{
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
