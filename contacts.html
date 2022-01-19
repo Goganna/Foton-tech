@@ -7,115 +7,129 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div>
-            <address>Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
-            <ul>
-                <li>
-                    <a href="mailto:dorotapawezka@gmail.com">
-                        <span>dorotapawezka@gmail.com</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+48695716531">
-                        <span>+48695716531</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="header_body">
-            <a href="index.html">
-                <img src="image/Logo.svg" alt="logo" width="131" height="34">
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <span>Strona główna</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about-us.html">
-                            <span>O nas</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="project.html">
-                            <span>Projekty</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="installation.html">
-                            <span>Instalacja</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">
-                            <span>Kontakt</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>    
-    </header>
-    <main>
-        <section>
-            <h1>Kontakt</h1>
-            <div class="contacts">
-                <p>Adres</p>
-                <address>Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
-                <p>E-mail</p>
-                <a href="mailto:dorotapawezka@gmail.com">
-                    <span>dorotapawezka@gmail.com</span>
-                </a>
-                <p>Telefon</p>
-                <a href="tel:+48695716531">
-                    <span>+48695716531</span>
-                </a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-wrapper header-wrapper-black">
+                <div class="container">
+                    <address class="address">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
+                    <ul class="header-list">
+                        <li class="nav-item">
+                            <a class="header-link link-mail" href="mailto:dorotapawezka@gmail.com">
+                                <span>dorotapawezka@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header-link link-phone" href="tel:+48695716531">
+                                <span class="tel">+48695716531</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.6885475887534!2d15.817508215796677!3d52.23087607976043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47067b7a45e03697%3A0x51babe9d7509ace9!2zR8WCw7N3bmEgNTMsIDY2LTIxMCBLb3NpZWN6eW4sINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1641034156105!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <img src="image/map.jpg" alt="map" width="800" height="607">-->
-    </main>
-    <footer class="footer">
-        <div class="footer_body">
-            <a href="index.html">
-                <img src="image/Logo.svg" alt="logo" width="131" height="34">
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <span>Strona główna</span>
+            <div class="header-wrapper">
+                <div class="container">
+                    <a class="logo" href="index.html">
+                        <img src="image/Logo.svg" alt="logo" width="131" height="34">
+                    </a>
+                    <nav class="nav">
+                        <ul class="list-body">
+                            <li class="nav-item">
+                                <a  href="index.html">
+                                    <span>Strona główna</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about-us.html">
+                                    <span>O nas</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="project.html">
+                                    <span>Projekty</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="installation.html">
+                                    <span>Instalacja</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="active active-header" href="contacts.html">
+                                    <span>Kontakt</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>  
+            </div>
+        </header>
+        <main class="main">
+            <section>
+                <div class="container-contacts">
+                    <h1 class="main-title-contact">Kontakt</h1>
+                    <div class="contacts">
+                        <p>Adres</p>
+                        <address class="header-link link-adress">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
+                        <p>E-mail</p>
+                        <a class="header-link link-mail" href="mailto:dorotapawezka@gmail.com">
+                            <span>dorotapawezka@gmail.com</span>
                         </a>
-                    </li>
-                    <li>
-                        <a href="about-us.html">
-                            <span>O nas</span>
+                        <p>Telefon</p>
+                        <a class="header-link link-phone" href="tel:+48695716531">
+                            <span>+48695716531</span>
                         </a>
-                    </li>
-                    <li>
-                        <a href="project.html">
-                            <span>Projekty</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="installation.html">
-                            <span>Instalacja</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">
-                            <span>Kontakt</span>
-                        </a>
-                    </li>
-                </ul>
-                <button type="button" class="footer_botton"><span>Oddzwoń</span></button>
-            </nav>
-        </div>
-        <div>
-            <a href="#"> Polityka prywatności </a>
-            <a href="#"> Ochrona danych osobowych</a>
-        </div>
-    </footer>
+                    </div>
+                    <div class="map"></div>
+                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.6885475887534!2d15.817508215796677!3d52.23087607976043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47067b7a45e03697%3A0x51babe9d7509ace9!2zR8WCw7N3bmEgNTMsIDY2LTIxMCBLb3NpZWN6eW4sINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1641034156105!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <img src="image/map.jpg" alt="map" width="800" height="607">-->
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_body">
+                <div class="container container_footer">
+                    <a class="logo" href="index.html">
+                        <img src="image/Logo.svg" alt="logo" width="131" height="34">
+                    </a>
+                    <nav class="nav nav_footer">
+                        <ul class="list-body">
+                            <li class="nav-item-footer">
+                                <a  href="index.html">
+                                    <span>Strona główna</span>
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="about-us.html">
+                                    <span>O nas</span>
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="project.html">
+                                    <span>Projekty</span>
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="installation.html">
+                                    <span>Instalacja</span>
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a class="active" href="contacts.html">
+                                    <span>Kontakt</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button type="button" class="footer_botton"><span>Oddzwoń</span></button>
+                </div>  
+            </div>
+            <div class="footer-low">
+                <div class="container container_footer2">
+                    <a href="#"> Polityka prywatności </a>
+                    <a href="#">Ochrona danych osobowych</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
