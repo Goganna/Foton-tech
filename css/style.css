@@ -32,11 +32,13 @@ ul {
 li {
     display: inline;
 }
-.address {
-}
+
 a {
     text-decoration: none;
+    color: inherit;
+    font:inherit;
 }
+/* -----HEADER----*/
 .header-wrapper {
     width: 100%;
     height: 57px;
@@ -70,19 +72,20 @@ a {
 .header-link:nth-child(1) {
     margin-left: auto;
 }
-.header-link::before {
-    position: absolut;
+.header-link.link-mail::before,
+.header-link.link-phone::before {
+    position: absolute;
     content: "";
     width: 14px;
     height: 14px;
-    background-image: url('../image/envelope.svg');
     background-position: center;
     background-repeat: no-repeat;
     left: -21px;
-    top: 3px;
-    
 }
-.header-link:last-child::before {
+.header-link.link-mail::before {
+    background-image: url('../image/envelope.svg');
+}
+.header-link.link-phone::before {
     background-image: url('../image/phone.svg');
 }
 .header-list a {
@@ -91,32 +94,38 @@ a {
 }
 .nav-item {
     margin-right: 56px;
+    color: #000;
+}
+.nav-item:last-child {
+    margin: o; /*Похоже не срабатывает*/
 }
 .active {
     color: #FF7129;
+    position: relative;
 }
-.nav-item-footer a{
-    margin-right: 56px;
-    color: white;
-    text-align: center;
+.active::before,
+.active::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #FF7129;
+    top: 8px;
 }
-
-.nav-item:last-child {
-    margin: o;
+.active::before {
+    left: -18px;
 }
-
-span.tel{
+.active::after {
+    right: -18px;
+}
+span.tel {
     font-weight: 500;
-}
-.nav-footer {
-    
 }
 .list-body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    
+    display: flex;  
 }
 .header-body a {
     color: #20242D;
@@ -126,102 +135,172 @@ span.tel{
     margin: 12px 826px 11px 0px;
 }
 .container-img {
-    background-image: url('../image/solar_panels.jpg');
-    width: 100%;
+    position: relative;
     max-width: 1600px;
-    height: 844px;
     margin: 0 auto;
+    padding-top: 271px;
+    padding-bottom: 290px;
+    background-image: radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0%, #20242D 100%), url('../image/solar_panels.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    /*width: 100%;*/
+    /*eight: 844px;*/
     text-align: center;
     color: white;
 }
-.img-content {
-    
+.container-img::before,
+.container-img::after {
+    position: absolute;
+    content: "";
+    height: 145px;
+    background-repeat: no-repeat;
 }
-.img-text {
-   
-    
-    
+.container-img::before {
+    width: 379px;
+    background-image: url('../image/solar.png');
+    left: 50px;
+    top: 167px;
 }
-.h1-main {
-    margin: 0;
+.container-img::after {
+    width: 444px;
+    background-image: url('../image/energy.png');
+    right: 50px;
+    bottom: 282px;
+}
+.main-title {
+    margin: 0 auto;
     font-weight: 700;
     font-size: 92px;
     line-height: 111px;
-    text-align: center;
-    padding: 271px 319px 16px 320px;
+    top: 271px;
+    /*text-align: center;
+    padding: 271px 319px 16px 320px;*/
 }  
-.works {
+.main-info {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    text-align: center;
+    /*text-align: center;*/
     display: block;
+    margin: 0 auto;
+    width: 508px;
+    margin-bottom: 25px;
     padding: 0px 546px 59px;
 }
+.body_botton {
+    margin: 0 auto;
+    min-width: 187px;
+    height: 49px;
+    font-weight: bold;
+    /*font-size: 14px;
+    line-height: 17px;*/
+    text-align: center;
+    background: #FF7129;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    display: block;
+}
+.body_botton:hover {
+    background: #D35E22;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+}
 .main-text {
+    position: relative;
     display: flex;
     max-width: 1200px;
     height: 600px;
     width: 100%;
-    margin: 200px auto;
+    margin: 132px auto;
 }
-.h2-main {
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 97%;
-    color: #20242D;
-    /*border-left-color: #FF7129; 
-    border-left-style: solid; 
-    border-left-width: 1px; */
-    padding: 0 10px; 
-    margin: 0 50px;
-   
-}
-.h2-main: ::before {
-    content:
-}
-.text-discribe {
-    margin: 0 50px;
+.main-text::after {
+    position: absolute;
+    content: "";
+    width: 535px;
+    height: 606px;
+    background-image: url('../image/construction_main.png');
+    background-repeat: no-repeat;
+    margin-top: -33px;
+    margin-left: -170px;
 }
 .text {
+    position: relative;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #20242D;
-    padding: 50px 0px 0px 0px;
+    padding-top: 25px;
 }
-.body_botton {
-    margin: auto;
-    width: 187px;
-    height: 49px;
+.text::before {
+    position: absolute;
+    content: "";
+    width: 217px;
+    height: 116px;
+    background-image: url('../image/info.png');
+    background-repeat: no-repeat;
+    margin-left: 28px;
+    padding-left: 67px;
+}
+.main-title2 {
+    position: relative;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    background: #FF7129;
-    color: white;
-    border: 1px solid #FF7129;
-    
+    font-size: 48px;
+    line-height: 97%;
+    color: #20242D;
+    padding: 0 10px; 
+    margin: 0 56px;
+    padding-top: 47px;
 }
+.main-title2::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 52px;
+    background-color: #FF7129;
+    left: 0;
+}
+.text-discribe {
+    width: 535px;
+    min-height: 216px;
+    margin: 0 50px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242D;
+
+}
+/* ----FOOTER---*/
 .footer {
     background-color: #20242D;
     width: 100%;
     min-width: 1600px; 
     height: 207px;
+    margin: o auto;
 }
 .footer_body {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
+    color: white; 
     display: flex;
     justify-content: space-around;
-    color: white;
     text-align: center;
 }
-.footer-body a {
-    color: #FFFFFF;
+.container.container_footer {
+    justify-content: space-around;
     text-align: center;
 }
+.nav-item-footer a{
+    margin-right: 56px;
+    text-align: center;
+}
+.nav-footer {
+    
+}
+
+
+
+
 .footer_botton {
     width: 187px;
     height: 49px;
@@ -232,6 +311,11 @@ span.tel{
     background: #20242D;
     color: white;
     border: 1px solid #FF7129;
+}
+.footer-low {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer-low a{
     color: white;
