@@ -134,6 +134,113 @@
                 </div>
             </div>
         </footer>
+    </div>    
+        <div id="popup" class="popup popup-container">
+            <section class="popup-section">
+                <div class="popup-content">
+                    <h2 class="main-title2-popup">Oddzwoń</h2>
+                    <p class="popup-p">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+                    <form class="call-form">
+                        <div class="input-name">
+                            <label for="name" class="popup-lable"> Twoje imię</label>
+                            <input type="text" name="name" id="name" placeholder="Wprowadź swoje imię" required>
+                        </div>
+                        <div class="input-name">
+                            <label for="phone" class="popup-lable"> Telefon</label>
+                            <input type="text" name="name" id="phone" placeholder="Wprowadź telefon" required>
+                        </div>
+                        <div class="button">
+                            <button class="popup_button" type="submit">Zadzwoń</button>
+                        </div>    
+                    </form>
+                    <button class="close-btn" type="button"><span class="cross">Close</span></button>
+                </div>                
+            </section>
+        </div>
+        <div id="popup2" class="popup-container popup-container2">
+            <section class="popup-section">
+                <div class="popup-content popup-content2">
+                    <h2 class="main-title2-popup popup2">Obliczyć koszt</h2>
+                    <p class="popup-p">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+                    <p class="popup-p2">Roczne zużycie energii elektrycznej <span class="popup-p3">42 200 kWh</span></p>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider-line" id="myRange">
+                    </div>
+                    <form class="count-form">
+                        <div class="input-name popup-2">
+                            <label for="name" class="popup-lable popup2"> Strona świata</label>
+                            <!--<input type="text" name="name" id="name" placeholder="Wybierz z listy" required>-->
+                            <div id="dd" class="wrapper-dropdown"><span>Wybierz z listy</span>
+                                <ul class="dropdown">
+                                    <li><a href="#">Południowy</a></li>
+                                    <li><a href="#">Wschodni</a></li>
+                                    <li><a href="#">Zachodni</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-name popup-2">
+                            <label for="phone" class="popup-lable popup2"> Materiał dachu</label>
+                            <input type="text" name="phone" id="phone" placeholder="Wybierz z listy" required>
+                            <!--<div id="dd1" class="wrapper-dropdown-1"><span>Wybierz z listy</span>
+                                <ul class="dropdown-1">
+                                    <li><a href="#">Południowy</a></li>
+                                    <li><a href="#">Wschodni</a></li>
+                                    <li><a href="#">Zachodni</a></li>
+                                </ul>
+                            </div>-->
+                        </div>
+                        <div class="button">
+                            <button class="popup_button popup_button2" type="submit">Obliczyć</button>
+                        </div>    
+                    </form>
+                    <button class="close-btn close-btn-main" type="button"><span class="cross">Close</span></button>
+                </div>
+            </section>
+
+        </div>
+        <div id="popup-order" class="popup-container popup-container-order">
+            <section class="popup-section popup-section-order">
+                <button class="close-btn-white close-btn-order" type="button"><span class="cross">Close</span></button>
+                <div class="popup-content-cost">
+                  <p class="popup-p-cost">Przybliżony koszt:</p>  
+                  <div class="cost">
+                      <p class="popup-p-price">40 000 zł
+                      <button class="popup_button-white popup_conversion" type="button">Przeliczyć</button></p>
+                  </div>
+                </div>
+                <div class="popup-content-order">
+                    <h2 class="main-title2-popup popup-order">Jakieś pytania?</h2>
+                    <p class="popup-p">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
+                    <form class="order-form">
+                        <div class="input-name">
+                            <label for="name" class="popup-lable"> Twoje imię</label>
+                            <input type="text" name="name" id="name" placeholder="Wprowadź swoje imię" required>
+                        </div>
+                        <div class="input-name input-name-mail">
+                            <label for="mail" class="popup-lable"> E-mail</label>
+                            <input type="text" name="mail" id="mail" placeholder="Wprowadź mail" required>
+                        </div>
+                        <div class="input-name">
+                            <label for="phone" class="popup-lable"> Telefon</label>
+                            <input type="text" name="phone" id="phone" placeholder="Wprowadź telefon" required>
+                        </div>
+                            
+                        <button class="popup_button popup_button-order" type="submit">Wysłać prośbę</button>    
+                    </form>
+                </div>
+            </section>
+        </div>
+         <div id="popup-thank" class="popup-container popup-container-thank">
+        <section class="popup-section popup-section-thank">
+            <button class="close-btn-white close-btn-thank" type="button"><span class="cross">Close</span></button>
+            <div class="popup-content popup-content-thank">
+                <div class="img-ok"></div>
+                <h2 class="title-thank">Dziękuję za twoją prośbę</h2>
+                <p class="popup-p-thank">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
+                <button class="popup_button-white popup_button-thank" type="submit">Ok</button> 
+            </div>                
+        </section>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

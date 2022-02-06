@@ -67,21 +67,24 @@
             <section>
                 <div class="container-contacts">
                     <h1 class="main-title-contact">Kontakt</h1>
-                    <div class="contacts">
-                        <p>Adres</p>
-                        <address class="header-link link-adress">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
-                        <p>E-mail</p>
-                        <a class="header-link link-mail" href="mailto:dorotapawezka@gmail.com">
-                            <span>dorotapawezka@gmail.com</span>
-                        </a>
-                        <p>Telefon</p>
-                        <a class="header-link link-phone" href="tel:+48695716531">
-                            <span>+48695716531</span>
-                        </a>
+                    <div class="contacts-map">
+                        <div class="contacts">
+                            <p>Adres</p>
+                            <address class="header-link link-adress">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
+                            <p>E-mail</p>
+                            <a class="header-link link-mail" href="mailto:dorotapawezka@gmail.com">
+                                <span>dorotapawezka@gmail.com</span>
+                            </a>
+                            <p>Telefon</p>
+                            <a class="header-link link-phone" href="tel:+48695716531">
+                                <span>+48695716531</span>
+                            </a>
+                        </div>
+                        <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.6885475887534!2d15.817508215796677!3d52.23087607976043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47067b7a45e03697%3A0x51babe9d7509ace9!2zR8WCw7N3bmEgNTMsIDY2LTIxMCBLb3NpZWN6eW4sINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1641034156105!5m2!1sru!2sua" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <!--<img src="image/map.jpg" alt="map" width="800" height="607">-->
+                        </div>
                     </div>
-                    <div class="map"></div>
-                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.6885475887534!2d15.817508215796677!3d52.23087607976043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47067b7a45e03697%3A0x51babe9d7509ace9!2zR8WCw7N3bmEgNTMsIDY2LTIxMCBLb3NpZWN6eW4sINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1641034156105!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <img src="image/map.jpg" alt="map" width="800" height="607">-->
                 </div>
             </section>
         </main>
@@ -131,5 +134,28 @@
             </div>
         </footer>
     </div>
+     <div id="popup" class="popup popup-container">
+        <section class="popup-section">
+            <div class="popup-content">
+                <h2 class="main-title2-popup">Oddzwoń</h2>
+                <p class="popup-p">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+                <form class="call-form">
+                    <div class="input-name">
+                        <label for="name" class="popup-lable"> Twoje imię</label>
+                        <input type="text" name="name" id="name" placeholder="Wprowadź swoje imię" required>
+                    </div>
+                    <div class="input-name">
+                        <label for="phone" class="popup-lable"> Telefon</label>
+                        <input type="text" name="name" id="phone" placeholder="Wprowadź telefon" required>
+                    </div>
+                    <div class="button">
+                        <button class="popup_button" type="submit">Zadzwoń</button>
+                    </div>    
+                </form>
+                <button class="close-btn" type="button"><span class="cross">Close</span></button>
+            </div>                
+        </section>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

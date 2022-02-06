@@ -7,116 +7,151 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div>
-            <address>Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
-            <ul>
-                <li>
-                    <a href="mailto:dorotapawezka@gmail.com">
-                        <span>dorotapawezka@gmail.com</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+48695716531">
-                        <span>+48695716531</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="header_body">
-            <a href="index.html">
-                <img src="image/Logo.svg" alt="logo" width="131" height="34">
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <span>Strona główna</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about-us.html">
-                            <span>O nas</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="project.html">
-                            <span>Projekty</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="installation.html">
-                            <span>Instalacja</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">
-                            <span>Kontakt</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section>
-            <h1> Projekty </h1>
-            <div class="slider">
-                <!--<ul>
-                    <li><img src="#" alt="roof_left"></li>
-                    <li><img src="image/panel-between-windows.jpg" alt="panel-between-windows" width="1018" height="494"></li>
-                    <li><img src="#" alt="roof_right"></li>
-                </ul> -->
-                <button class="slider-prev">Prev</button>
-                <button class="slider-next">Next</button>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-wrapper header-wrapper-black">
+                <div class="container">
+                    <address class="address">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
+                    <ul class="header-list">
+                        <li class="nav-item">
+                            <a class="header-link link-mail" href="mailto:dorotapawezka@gmail.com">
+                                <span>dorotapawezka@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header-link link-phone" href="tel:+48695716531">
+                                <span class="tel">+48695716531</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <a href="#">1</a>
-                <span>/</span>
-                <a href="#">40</a>
+            <div class="header-wrapper">
+                <div class="container">
+                    <a class="logo" href="index.html">
+                        <img src="image/Logo.svg" alt="logo" width="131" height="34">
+                    </a>
+                    <nav class="nav">
+                        <ul class="list-body">
+                            <li class="nav-item">
+                                <a  href="index.html">
+                                    <span>Strona główna</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about-us.html">
+                                    <span>O nas</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="active active-header" href="project.html">
+                                    <span>Projekty</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="installation.html">
+                                    <span>Instalacja</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacts.html">
+                                    <span>Kontakt</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>  
             </div>
+        </header>
+        <main class="main">
+            <section>
+                <div class="container-contacts">
+                    <h1 class="main-title-project"> Projekty </h1>
+                    <div class="slider">
+                        <!--<ul>
+                            <li><img src="#" alt="roof_left"></li>
+                            <li><img src="image/panel-between-windows.jpg" alt="panel-between-windows" width="1018" height="494"></li>
+                            <li><img src="#" alt="roof_right"></li>
+                        </ul> -->
+                        <button class="slider-prev"><</button>
+                        <button class="slider-next">></button>
+                    </div>
+                    <div>
+                        <a href="#">1</a>
+                        <span>/</span>
+                        <a href="#">40</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_body">
+                <div class="container container_footer">
+                    <a class="logo" href="index.html">
+                        <img src="image/Logo.svg" alt="logo" width="131" height="34">
+                    </a>
+                    <nav class="nav nav_footer">
+                        <ul class="list-body">
+                            <li class="nav-item-footer">
+                                <a  href="index.html">
+                                    <span>Strona główna</span>
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="about-us.html">
+                                    <span>O nas</span>
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a class="active" href="project.html">
+                                    <span>Projekty</span>
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="installation.html">
+                                    <span>Instalacja</span>
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="contacts.html">
+                                    <span>Kontakt</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button type="button" class="footer_botton"><span>Oddzwoń</span></button>
+                </div>  
+            </div>
+            <div class="footer-low">
+                <div class="container container_footer2">
+                    <a href="#"> Polityka prywatności </a>
+                    <a href="#">Ochrona danych osobowych</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+     <div id="popup" class="popup popup-container">
+        <section class="popup-section">
+            <div class="popup-content">
+                <h2 class="main-title2-popup">Oddzwoń</h2>
+                <p class="popup-p">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+                <form class="call-form">
+                    <div class="input-name">
+                        <label for="name" class="popup-lable"> Twoje imię</label>
+                        <input type="text" name="name" id="name" placeholder="Wprowadź swoje imię" required>
+                    </div>
+                    <div class="input-name">
+                        <label for="phone" class="popup-lable"> Telefon</label>
+                        <input type="text" name="name" id="phone" placeholder="Wprowadź telefon" required>
+                    </div>
+                    <div class="button">
+                        <button class="popup_button" type="submit">Zadzwoń</button>
+                    </div>    
+                </form>
+                <button class="close-btn" type="button"><span class="cross">Close</span></button>
+            </div>                
         </section>
-    </main>
-    <footer class="footer">
-        <div class="footer_body">
-            <a href="index.html">
-                <img src="image/Logo.svg" alt="logo" width="131" height="34">
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <span>Strona główna</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about-us.html">
-                            <span>O nas</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="project.html">
-                            <span>Projekty</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="installation.html">
-                            <span>Instalacja</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">
-                            <span>Kontakt</span>
-                        </a>
-                    </li>
-                </ul>
-                <button type="button" class="footer_botton"><span>Oddzwoń</span></button>
-            </nav>
-        </div>
-        <div>
-            <a href="#"> Polityka prywatności </a>
-            <a href="#">Ochrona danych osobowych</a>
-        </div>
-    </footer>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
